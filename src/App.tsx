@@ -18,6 +18,7 @@ import {
   Menu,
   X,
   Bell,
+  HeartHandshake,
   Edit2,
   Save,
   Trash2,
