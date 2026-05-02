@@ -25,6 +25,7 @@ import {
   CheckCircle2
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import sheepLogo from './assets/sheep-logo.jpg';
 
 // --- Types ---
 interface Task {
@@ -255,9 +256,7 @@ export default function App() {
       {/* Mobile Top Header */}
       <header className="sticky top-0 z-50 glass-card mx-2 mt-2 px-4 py-3 flex items-center justify-between lg:hidden">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-emerald-200">
-            <HeartHandshake className="w-6 h-6" />
-          </div>
+          <img src={sheepLogo} alt="Sheep Logo" className="w-10 h-10 rounded-xl shadow-lg shadow-emerald-200 object-cover" />
           <div>
             <h1 className="font-display text-lg font-bold text-slate-800 leading-tight">QurbanPro</h1>
             <p className="text-[10px] text-slate-500 font-medium uppercase tracking-wider">Idul Adha 1447H</p>
@@ -277,9 +276,7 @@ export default function App() {
         ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}
       `}>
         <div className="p-8 hidden lg:flex items-center gap-3 mb-8">
-          <div className="w-12 h-12 bg-emerald-600 rounded-2xl flex items-center justify-center text-white shadow-xl shadow-emerald-100">
-            <HeartHandshake className="w-7 h-7" />
-          </div>
+          <img src={sheepLogo} alt="Sheep Logo" className="w-12 h-12 rounded-2xl shadow-xl shadow-emerald-100 object-cover" />
           <div>
             <h1 className="font-display text-xl font-extrabold text-brand-secondary">QurbanPro</h1>
             <p className="text-xs text-slate-400 font-semibold uppercase tracking-widest">Committee Hub</p>
